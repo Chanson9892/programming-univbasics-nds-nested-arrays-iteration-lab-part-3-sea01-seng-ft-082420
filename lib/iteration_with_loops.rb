@@ -9,9 +9,9 @@ def join_nested_strings(src)
       if src[row_index][element_index].class == String
       string.join(src[row_index][element_index])
       end
-        string << src[row_index][element_index] + " "
       element_index += 1
     end
+  string << src[row_index][element_index] + " "
   row_index += 1
   end
   string
